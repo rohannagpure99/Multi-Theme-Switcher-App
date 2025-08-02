@@ -1,0 +1,35 @@
+body.theme1 {
+  background-color: #f9f9f9;
+  color: #333;
+  font-family: sans-serif;
+}
+
+body.theme2 {
+  background-color: #121212;
+  color: #f9f9f9;
+  font-family: serif;
+}
+
+body.theme3 {
+  background-color: #ffe4e1;
+  color: #444;
+  font-family: 'Pacifico', cursive;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #e3f2fd;
+  position: sticky;
+  top: 0;
+}
+
+.nav-links a {
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.main-content {
+  padding: 2rem;
+}
