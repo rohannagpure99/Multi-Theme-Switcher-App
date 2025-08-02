@@ -4,7 +4,6 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import "./App.css";
 
-// Create Context
 const ThemeContext = createContext();
 
 const ThemeProvider = ({ children }) => {
@@ -22,7 +21,7 @@ const ThemeProvider = ({ children }) => {
   );
 };
 
-// Header component
+
 const Header = () => {
   const { theme, setTheme } = useContext(ThemeContext);
   return (
@@ -42,14 +41,12 @@ const Header = () => {
   );
 };
 
-// Sidebar component
 const Sidebar = () => (
   <aside className="sidebar">
   
   </aside>
 );
 
-// Footer component
 const Footer = () => (
   <footer className="footer">
     
@@ -57,17 +54,17 @@ const Footer = () => (
   </footer>
 );
 
-// Environmental Card component (text only)
+
 const SustainabilityCard = ({ title, description }) => (
   <div className="card-vertical">
     <h3>{title}</h3>
     <p>{description}</p>
-    {/* <button className="learn-more-btn">Learn More</button> */}
+ 
     <button type="learn-more-btn" className="btn btn-primary">Learn More</button>
   </div>
 );
 
-// Home page with sustainability cards
+
 const Home = () => (
   <div className="layout">
     <Sidebar />
@@ -108,7 +105,7 @@ const Home = () => (
   </div>
 );
 
-// App component
+
 const App = () => (
   <ThemeProvider>
     <Router>
